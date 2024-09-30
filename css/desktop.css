@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --cor1: #F8F7F4;
+    --cor2: #731A12;
+    --cor3: #499EBF;
+    --cor4: #A61103;
+    --cor5: #BF5D54;
+    --cor6: #5BC2D9;
+}
+
+
+body{
+    background-color: var(--cor1);
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--cor4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav span.material-symbols-outlined{
+    display: none;
+    color: white;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li{
+    color: white;
+    font-weight: 600;
+}
+
+nav > ul > li > a{
+    color: white;
+}
+
+nav > ul > li:hover{
+    scale: calc(103%);
+}
+
+nav#menu{
+    display: none;
+}
+nav span{
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: var(--cor4);
+}
+
+#slogan{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    margin-top: 2em;
+}
+
+#slogan img{
+    width: 30%;
+    
+}
+
+h1{
+    font-family: "IM Fell DW Pica SC";
+    color: var(--cor4);
+    font-size: 3em;
+}
+
+/* main{
+    overflow-x: hidden;
+} */
+
+main #container_busca{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+
+#container_busca button{
+    background-color: var(--cor4);
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 25%;
+    box-shadow: 1px 1px 1.3px 1px rgba(0, 0, 0, 0.658);
+}
+
+#container_busca button:hover{
+    scale: calc(106%);
+}
+
+main h1{
+    margin-top: 1.5em;
+    text-align: center;
+    margin-bottom: 1.15em;
+}
+
+section#recentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 14px;
+}
+
+div.item{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 800px;
+    width: 300px;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1.5px black;
+}
+
+div.item img{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+div.item h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Cinzel Decorative';
+    color: var(--cor5);
+}
+
+div.item p{
+    overflow: scroll;
+    text-align: justify;
+    padding: 0px 1em 0px 1em;
+    color: black;
+    overflow-y: visible;
+}
+.botao{
+    background-color: transparent;
+    border: 1.5px solid var(--cor5);
+    border-radius: 10px;
+    box-shadow: 0.5px 0.75px 1.6px 0.5px var(--cor5);
+    width: 90%;
+    padding: 8px;
+    font-weight:800;
+    color: var(--cor5);
+}
+
+.botao:hover{
+    background-color: #4b1102e5;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.carrinho{
+    background-color: transparent;
+    border: 1.5px solid var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0.5px 0.75px 1.6px 0.5px var(--cor1);
+    width: 90%;
+    padding: 8px;
+    font-weight:800;
+    color: var(--cor1);
+}
+
+.carrinho:hover{
+    background-color: var(--cor3);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#fechar1{
+    align-self: flex-start;
+}
+
+.exemplar_item{
+    height: 110px;
+}
+
+.item_fav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 0px 15px;
+}
+
+.item_fav img{
+    height: 60%;
+}
+
+.item_fav h1{
+    font-size: 1.4em;
+}
+
+.item_fav div{
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.item_fav button{
+    border-radius: 5px;
+    padding: 4px;
+    background-color: var(--cor4);
+    color: white;
+    border: 1px solid black;
+    font-weight: 500;
+    width: 100%;
+}
+
+.item_fav button:hover{
+    background-color: #ff7700;
+    cursor: pointer;
+}
+
+
+#info{
+    display: flex;
+    flex-direction: column;
+}
+
+#carrinho, #detalhes{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.582);
+    border-radius: 8px;
+}
+
+
+#detalhes{
+    position: fixed;
+}
+
+#carrinho h1{
+    margin-right:  auto;
+    margin-left:  auto;
+}
+
+#carrinho span#fechar_it, #detalhes span#fechar_det{
+    display: block;
+    margin: 15px 0px 0px 15px;
+}
+
+
+
+#detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.1em;
+    padding-left: 0.7em;
+}
+
+#detail #studio, #rate, #genero, #ano, #qtd_rate{
+    display: flex;
+    justify-content: space-between;
+    gap: 7.5px;
+    font-weight: 500;
+    
+}
+
+#studio label, #rate label, #genero label, #ano label, #qtd_rate label {
+    background-color: #A61103;
+    color: white;
+    padding: 7px;
+    border-radius: 23%;
+}
+
+#container_det{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 5em;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #f27405b0, var(--cor4));
+    color: black;
+}
+
+footer h1{
+    display: flex;
+    justify-items: center;
+    color: #731702;
+}
+
+footer h2{
+    color: #731702;
+    font-family: 'Cinzel Decorative';
+    font-size: 1.15em;
+}
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#sobre p{
+    text-align: justify;
+}
+
+footer img{
+    width: 30px;
+}
+
+#copy{
+    width: 21%;
+    font-size: 1em;
+}
+
+#redes{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#politicas{
+    width: 19%;
+}
+
+#politicas a{
+    color: black;
+}
+#politicas a:hover{
+    text-decoration: underline;
+}
+
+.reset{
+    order: -1;
+}
+
+#github{
+    height: 55px;
+    width: 55px;
+}
+
+#insta{
+    height: 33px;
+    width: 33px;
+}
+
+#wpp{
+    height: 35px;
+    width: 62px;
+}
+

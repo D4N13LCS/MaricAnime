@@ -1,0 +1,54 @@
+
+
+header{
+    align-items: center;
+}
+
+header section img{
+    max-width: 10em;
+    min-height: 10em;
+}
+
+
+div.item{
+    height: 725px;
+}
+
+
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+#sobre{
+    margin-bottom: -25px;
+}
+
+#sobre div p{
+    min-height: 136px;
+    min-width: 135px;
+    font-size: 0.92em;
+}
+
+#copy{
+    width: 21%;
+    font-size: 1em;
+}
+
+#github{
+    height: 50px;
+    width: 50px;
+}
+
+#insta{
+    height: 30px;
+    width: 30px;
+}
+
+#wpp{
+    height: 30px;
+    width: 55px;
+}
